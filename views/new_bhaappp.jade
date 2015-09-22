@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddBhaappp(name="adduser",method="post",action="/add_bhaappp")
+        input#inputUserName(type="text", placeholder="name", name="name")
+        br
+        textarea#inputBhaapp(type="textarea", placeholder="you bhaappp message", name="bhaappp")
+        br
+        button#btnSubmit(type="submit") submit
